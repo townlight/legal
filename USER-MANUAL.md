@@ -4,6 +4,8 @@
 
 CivicLegal helps authorized municipal legal staff work with the city's own legal record. It supports cited internal search, prior-action lookup, attorney-reviewed memo scaffolds, ordinance comparison checklists, litigation-hold candidate flags, optional saved memo/hold workpapers, and authority citation tracking.
 
+Published version `0.1.2` is a foundation label under suite-wide release-recovery review. Do not promote it as production legal software until the recovery gates and a future v1.0.0 definition of done are complete.
+
 CivicLegal does not provide legal advice. It does not replace Westlaw, Lexis, outside counsel, court filing systems, e-discovery systems, or attorney judgment.
 
 ## Non-Technical Staff Guide

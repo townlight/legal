@@ -1,5 +1,16 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Suite-wide release-recovery status, audit-full packet, browser QA evidence, and regression checks that keep the published v0.1.2 label provisional.
+
+### Changed
+
+- Removed the hidden CI CivicCore preinstall so fresh installs must resolve the published CivicCore v0.11.0 release wheel through package metadata.
+- Updated release verification to prefer `python3` before `python` and removed the WindowsApps fallback from the WSL/Ubuntu release path.
+
 ## [0.1.2] - 2026-04-29
 
 ### Changed
