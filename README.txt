@@ -1,6 +1,6 @@
-CivicLegal v0.1.2 is the CivicSuite internal legal-record research support module.
+CivicLegal published v0.1.2 is the CivicSuite internal legal-record research support module and is a foundation label under suite-wide release-recovery review. Do not promote it as production legal software until the recovery gates and a future v1.0.0 definition of done are complete.
 
-Shipping: privilege-aware corpus filtering, citation-first city-record search, prior-action lookup, attorney-reviewed memo scaffolds, ordinance comparison checklists, litigation-hold candidate flags, optional database-backed memo/hold workpapers, authority citation tracking, FastAPI runtime, docs, tests, and browser QA evidence.
+Available: privilege-aware corpus filtering, citation-first city-record search, prior-action lookup, attorney-reviewed memo scaffolds, ordinance comparison checklists, litigation-hold candidate flags, optional database-backed memo/hold workpapers, authority citation tracking, FastAPI runtime, docs, tests, and browser QA evidence.
 
 Boundaries: CivicLegal is not legal advice, not Westlaw or Lexis, not a court-filing system, not an autonomous legal conclusion engine, not an e-discovery platform, not a live LLM runtime, and not an external legal-system connector.
 
