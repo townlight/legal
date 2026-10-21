@@ -1,8 +1,10 @@
-# CivicLegal Architecture
+<a id="civiclegal-architecture"></a>
 
-CivicLegal v0.1.0 accepts city-controlled legal records, applies access-tier filtering, returns citation-first search/precedent outputs, and creates attorney-reviewed drafting aids.
+# Townlight Legal Architecture
 
-![CivicLegal architecture](architecture-civiclegal.svg)
+Townlight Legal v0.1.0 accepts city-controlled legal records, applies access-tier filtering, returns citation-first search/precedent outputs, and creates attorney-reviewed drafting aids.
+
+![Townlight Legal architecture](architecture-civiclegal.svg)
 
 ## Current Components
 

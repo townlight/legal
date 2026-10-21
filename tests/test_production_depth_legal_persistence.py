@@ -74,7 +74,7 @@ def test_get_memo_without_persistence_returns_actionable_503(monkeypatch) -> Non
 
     assert response.status_code == 503
     detail = response.json()["detail"]
-    assert detail["message"] == "CivicLegal workpaper persistence is not configured."
+    assert detail["message"] == "Townlight Legal workpaper persistence is not configured."
     assert "Set CIVICLEGAL_WORKPAPER_DB_URL" in detail["fix"]
 
 

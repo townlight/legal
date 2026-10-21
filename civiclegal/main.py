@@ -1,4 +1,4 @@
-"""FastAPI runtime foundation for CivicLegal."""
+"""FastAPI runtime foundation for Townlight Legal."""
 import os
 
 from civiccore import __version__ as CIVICCORE_VERSION
@@ -18,9 +18,9 @@ from civiclegal.search import search_legal_corpus
 from civiclegal.statutes import track_authority_citations
 
 app = FastAPI(
-    title="CivicLegal",
+    title='Townlight Legal',
     version=__version__,
-    description="Internal legal-corpus lookup, privilege-aware search, and attorney-reviewed drafting support for CivicSuite.",
+    description='Internal legal-corpus lookup, privilege-aware search, and attorney-reviewed drafting support for Townlight.',
 )
 
 _workpaper_repository: LegalWorkpaperRepository | None = None
@@ -69,7 +69,7 @@ def root() -> dict[str, str]:
         "version": __version__,
         "status": "internal legal-corpus foundation",
         "message": (
-            "CivicLegal package, API foundation, privilege-aware record filtering, citation-first "
+            "Townlight Legal package, API foundation, privilege-aware record filtering, citation-first "
             "search, precedent lookup, memo draft scaffolds, ordinance comparison, litigation-hold "
             "candidate flags, optional database-backed memo/hold workpapers, citation tracking, and "
             "public UI foundation are online; legal advice, "
@@ -121,7 +121,7 @@ def memo(request: MemoRequest) -> dict[str, object]:
 @app.get("/api/v1/civiclegal/memo/{memo_id}")
 def get_memo(memo_id: str) -> dict[str, object]:
     if _workpaper_database_url() is None:
-        raise HTTPException(status_code=503, detail={"message":"CivicLegal workpaper persistence is not configured.","fix":"Set CIVICLEGAL_WORKPAPER_DB_URL to retrieve persisted attorney-review memo drafts."})
+        raise HTTPException(status_code=503, detail={"message":"Townlight Legal workpaper persistence is not configured.","fix":"Set CIVICLEGAL_WORKPAPER_DB_URL to retrieve persisted attorney-review memo drafts."})
     stored = _get_workpaper_repository().get_memo(memo_id)
     if stored is None:
         raise HTTPException(status_code=404, detail={"message":"Legal memo draft record not found.","fix":"Use a memo_id returned by POST /api/v1/civiclegal/memo."})
@@ -149,7 +149,7 @@ def litigation_hold(request: HoldRequest) -> dict[str, object]:
 @app.get("/api/v1/civiclegal/litigation-hold/{hold_id}")
 def get_litigation_hold(hold_id: str) -> dict[str, object]:
     if _workpaper_database_url() is None:
-        raise HTTPException(status_code=503, detail={"message":"CivicLegal workpaper persistence is not configured.","fix":"Set CIVICLEGAL_WORKPAPER_DB_URL to retrieve persisted litigation-hold preflight records."})
+        raise HTTPException(status_code=503, detail={"message":"Townlight Legal workpaper persistence is not configured.","fix":"Set CIVICLEGAL_WORKPAPER_DB_URL to retrieve persisted litigation-hold preflight records."})
     stored = _get_workpaper_repository().get_litigation_hold(hold_id)
     if stored is None:
         raise HTTPException(status_code=404, detail={"message":"Litigation-hold preflight record not found.","fix":"Use a hold_id returned by POST /api/v1/civiclegal/litigation-hold."})

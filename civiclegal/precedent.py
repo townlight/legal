@@ -19,5 +19,5 @@ def lookup_precedent(question: str, records: list[LegalRecord], role: str) -> Pr
         question.strip(),
         tuple(hit.citation for hit in hits),
         True,
-        "CivicLegal surfaces prior city records with citations; it does not make legal conclusions.",
+        "Townlight Legal surfaces prior city records with citations; it does not make legal conclusions.",
     )
