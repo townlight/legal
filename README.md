@@ -39,4 +39,7 @@ Set `CIVICLEGAL_WORKPAPER_DB_URL` to persist attorney-review memo drafts and lit
 - [Landing Page](docs/index.html)
 - [Release Notes](CHANGELOG.md)
 
-Apache 2.0 code. CC BY 4.0 docs.
+## License
+
+Code: AGPL-3.0-only, with the TownLight Public Institution Exception for qualifying deployments. See [LICENSE](LICENSE) and [LICENSE-EXCEPTION.md](LICENSE-EXCEPTION.md).
+Documentation: CC BY 4.0 ([LICENSE-DOCS](LICENSE-DOCS)).
