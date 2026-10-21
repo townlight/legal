@@ -19,7 +19,7 @@ def compare_ordinance_draft(proposed_title: str, prior_citations: list[str]) -> 
         citations,
         (
             "Compare definitions and enforcement language against prior versions.",
-            "Confirm codifier formatting outside CivicLegal.",
+            "Confirm codifier formatting outside Townlight Legal.",
             "Attorney review required before introduction.",
         ),
         True,

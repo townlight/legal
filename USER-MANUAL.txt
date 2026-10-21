@@ -1,13 +1,13 @@
-CivicLegal User Manual
+Townlight Legal User Manual
 
 Non-technical staff:
-Use CivicLegal to search the city's own legal record, surface prior actions with citations, draft attorney-reviewed memo outlines, retrieve optional saved memo/hold workpapers, compare ordinance drafts, and flag litigation-hold candidates. Published version 0.1.2 is a foundation label under suite-wide release-recovery review. Do not promote it as production legal software until the recovery gates and a future v1.0.0 definition of done are complete. Do not treat output as legal advice or a final legal conclusion.
+Use Townlight Legal to search the city's own legal record, surface prior actions with citations, draft attorney-reviewed memo outlines, retrieve optional saved memo/hold workpapers, compare ordinance drafts, and flag litigation-hold candidates. Published version 0.1.2 is a foundation label under suite-wide release-recovery review. Do not promote it as production legal software until the recovery gates and a future v1.0.0 definition of done are complete. Do not treat output as legal advice or a final legal conclusion.
 
 Access tiers:
 Public records can be visible broadly. Staff records require authorized staff access. Attorney-tier and privileged/work-product records are isolated and controlled by the city attorney.
 
 What it is not:
-CivicLegal is not legal advice, Westlaw, Lexis, outside counsel, court filing, e-discovery, autonomous legal conclusions, live LLM runtime, or external legal-system connector.
+Townlight Legal is not legal advice, Westlaw, Lexis, outside counsel, court filing, e-discovery, autonomous legal conclusions, live LLM runtime, or external legal-system connector.
 
 IT/technical:
 Install with:

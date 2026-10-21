@@ -1,4 +1,4 @@
-"""Privilege-tier helpers for CivicLegal."""
+"""Privilege-tier helpers for Townlight Legal."""
 from dataclasses import dataclass
 from enum import StrEnum
 

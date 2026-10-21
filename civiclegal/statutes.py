@@ -16,5 +16,5 @@ def track_authority_citations(topic: str, citations: list[str]) -> CitationTrack
         topic.strip(),
         normalized,
         True,
-        "Attorney-maintained citation list only; CivicLegal does not replace Westlaw or Lexis.",
+        "Attorney-maintained citation list only; Townlight Legal does not replace Westlaw or Lexis.",
     )

@@ -33,7 +33,7 @@ def test_health_reports_civiccore_pin():
 def test_public_ui_contains_version_boundaries_and_dependency():
     text = client.get("/civiclegal").text
 
-    assert "CivicLegal v0.1.2" in text
+    assert "Townlight Legal v0.1.2" in text
     assert "No legal advice" in text
     assert "v0.11.0 release wheel" in text
     assert "published foundation label under suite-wide release-recovery review" in text
