@@ -1,13 +1,44 @@
-Townlight Legal published v0.1.2 is the Townlight internal legal-record research support module and is a foundation label under suite-wide release-recovery review. Do not promote it as production legal software until the recovery gates and a future v1.0.0 definition of done are complete.
+  Parked foundation — outside the released Windows suite. This repository contains exploratory/support code, not a completed Townlight product. It is not installed or supported by Windows 1.8.1.1. Historical examples, package names and dependency pins below describe this foundation and must not be used as current suite installation instructions. Use the released Windows suite, current modules and acceptance limits.
 
-Available: privilege-aware corpus filtering, citation-first city-record search, prior-action lookup, attorney-reviewed memo scaffolds, ordinance comparison checklists, litigation-hold candidate flags, optional database-backed memo/hold workpapers, authority citation tracking, FastAPI runtime, docs, tests, and browser QA evidence.
+Townlight Legal
 
-Boundaries: Townlight Legal is not legal advice, not Westlaw or Lexis, not a court-filing system, not an autonomous legal conclusion engine, not an e-discovery platform, not a live LLM runtime, and not an external legal-system connector.
+Townlight Legal is the Townlight internal legal-record research support module. Published version 0.1.2 is a foundation label under suite-wide release-recovery review. It provides deterministic foundations for privilege-aware corpus filtering, citation-first search across city records, prior-action lookup, attorney-reviewed memo scaffolds, ordinance comparison checklists, litigation-hold candidate flags, optional database-backed legal workpapers, authority citation tracking, FastAPI runtime, docs, tests, browser QA, and release gates. Do not promote it as production legal software until the recovery gates and a future v1.0.0 definition of done are complete.
 
-Install:
-python -m pip install -e ".[dev]"
-python -m uvicorn civiclegal.main:app --host 127.0.0.1 --port 8140
+It is intentionally not legal advice, not Westlaw or Lexis, not a court-filing system, not an autonomous legal conclusion engine, and not an external legal-system connector. City attorneys control the corpus, approve outputs, and make all legal judgments.
 
-Dependency: published civiccore v0.11.0 release wheel.
+Available in v0.1.2
+
+- Privilege-tier helpers for public, staff, attorney, and privileged records, now backed by the shared civiccore.search access helpers.
+- Citation-first cross-corpus search over supplied city legal records.
+- Prior-action lookup with citation output and attorney-review boundary.
+- Legal memo draft scaffolds that require attorney review.
+- Optional SQLAlchemy-backed memo draft and litigation-hold workpaper records through CIVICLEGAL_WORKPAPER_DB_URL.
+- Ordinance draft comparison checklists.
+- Litigation-hold candidate flagging.
+- Attorney-maintained statute/case citation tracking.
+- FastAPI runtime with health, public landing page, and deterministic API endpoints.
+
+Not shipped yet
+
+- Legal advice, Westlaw/Lexis replacement, autonomous legal conclusions, court filing, e-discovery management, live LLM calls, live privileged corpus ingestion, or external legal-system connector runtime.
+- Live Townlight Code, Townlight Meetings, or Townlight Contracts imports. v0.1.2 models the handoff shapes and keeps them deterministic.
+
+Install
+
+    python -m pip install -e ".[dev]"
+    python -m uvicorn civiclegal.main:app --host 127.0.0.1 --port 8140
+
+Townlight Legal v0.1.2 is pinned to the published civiccore v0.11.0 release wheel.
 
 Set CIVICLEGAL_WORKPAPER_DB_URL to persist attorney-review memo drafts and litigation-hold preflight records. Without it, Townlight Legal remains deterministic and stateless.
+
+Documentation
+
+- User Manual
+- Architecture
+- Landing Page
+- Release Notes
+
+License
+
+Code: AGPL-3.0-only, with the TownLight Public Institution Exception for qualifying deployments. See LICENSE and LICENSE-EXCEPTION.md. Documentation: CC BY 4.0 (LICENSE-DOCS).
